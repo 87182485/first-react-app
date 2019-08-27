@@ -47,7 +47,7 @@ export class Todo extends React.Component {
     const todos = this.state.todos.filter(t => t.key!==todo.key);
 
     this.setState({
-        todos: [...todos, todo]
+        todos: sortTodo([...todos, todo])
     });
   }
 
